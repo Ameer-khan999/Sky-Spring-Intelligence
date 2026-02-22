@@ -1,0 +1,1 @@
+Cloud Learning Journey 2026: Testing with Terraform Local Provider
