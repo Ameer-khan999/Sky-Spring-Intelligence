@@ -1,0 +1,6 @@
+
+
+*)3 simple ways to add text to a file
+  1.vi
+  2.redirect command output > or >>
+  3.echo > or >>

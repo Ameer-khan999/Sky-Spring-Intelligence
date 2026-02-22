@@ -1,0 +1,14 @@
+*)Compressing and uncompressing files
+  1.tar cvf            == this command is used to taring(EX:-zipping) the file
+        SYNTAX:- tar cvf akhan.tar /home/akhan (or) .
+
+  2.tar xvf            == this command is used to untaring the taring file
+        SYNTAX:- tar xvf akhan.tar blah   NOTE: "blah" is a directory..
+ 
+  3.gzip               == this command is used to compress the tar file
+       SYNTAX:-  gzip akhan.tar  NOTE:- later it converts to "akhan.tar.gz" file
+  
+  4.gzip -d OR gunzip   == this command is used to uncompress the compressed file
+         SYNTAX:-   gzip -d (or) gunzip akhan.tar.gz
+
+................................................................................................  

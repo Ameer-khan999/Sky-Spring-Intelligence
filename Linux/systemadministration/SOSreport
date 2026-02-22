@@ -1,0 +1,16 @@
+
+                                      SOS REPORT
+                                     <----------->
+
+1.What is SOS Report ?
+   --> Collect and package diagnostic and support data
+
+2.Package Name
+   --> sos-version
+
+3.Command
+  --> sosreport
+      enter key 9000 or any other number  and its automatically collects data and then tar's it. 
+
+.................................................................................................
+

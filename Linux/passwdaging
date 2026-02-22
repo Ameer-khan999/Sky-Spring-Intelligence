@@ -1,0 +1,44 @@
+                                 
+                                THE /etc/login.defs FIle
+...............................................................................................................
+
+ --> The chage command-per user
+    
+     SYNTAX:-
+        
+           chage -m[mindays] -M[maxdays] -d[lastday] -I[inactive] -E[expiredate] -W[warndays] username
+        < ---------------------------------------------------------------------------------------------->
+
+ --> File=/etc/login.def or .defs
+     
+     1.PASS_MAX_DAYS     99999
+     2.PASS_MIN_DAYS     0
+     3.PASS_MIN_LEN      5
+     4.PASS_WARN_AGE     7
+
+
+   --> The chage command is used to set the password validity and it is not to make changes of user.
+
+    -d=3,last password change[last changed] : Days since jan 1,1970 that password was last changed.
+
+    -m=4,Minimum   : The minimum numer of days required between password changes i.e. the number of days left before
+                     is allowed to change his/her password
+    
+    -M=5,Maximum   : The maximum number of days that password is valid(After that user is forced to change his/her 
+                     password.
+
+    -W=6,Warn      : The number of days before password is to expire that users is warned that his/her password must 
+                      be changed.
+
+    -I=7,Inactive  : The number of days after password is expires that account is disabled.
+
+    -E=8,Expire    : Dyas since jan 1,1970 that account is disabled i.e. an absolute date specifying when the login may
+                     no longer be used.
+
+.......................................................................................................................
+
+  create username   = useradd babubutt
+  set password      = passwd babubutt
+  set age           = use above SYNTAX 
+  
+

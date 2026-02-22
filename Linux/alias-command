@@ -1,0 +1,20 @@
+
+                                            ALIAS COMMAND
+                                      ------------------------
+
+--> Aliases is a very popular command that is used to cut down on lengthy and repetitive commands
+
+   1.alias ls="ls -la"
+   2.alias pl="pwd;ls"
+   3.alias tell="whoami;hostname;pwd"
+   4.alias dir="ls -l | grep ^d"
+   5.alias lmar="ls -l | grep Mar"
+   6.alias wpa="chmod a+w"
+   7.alias d="df -h | awk '{print /$6}' | cut -c1-4"
+
+--> if we want to see all aliased commands than type = alias
+
+-->if we want to delete aliased commands than type = unalias d
+
+
+----------------------------------------------------------------------------------------------

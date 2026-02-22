@@ -1,0 +1,60 @@
+
+
+                                  SPECIAL PERMISSIONS WITH SETUID,SETGID AND STICKY BIT
+                                 <------------------------------------------------------>
+
+--> All permissions on a file or directory are referred as bits
+
+     -rwx        rwx       rwx -------> every letter is a bit
+       |          |         |
+       |          |         |
+     Users     Groups   Others
+
+NOTE:- To change this permissions we use chmod command
+                                        -------
+
+--> There are 3 additionals permissions in linux
+      1.setuid:bits telss linux to run a program with the effective user id of the owner instead of the executor.(e.g.passwd command) 
+        /etc/shadow
+   
+      2.bit telss linux to run a program with the effective group id of the owner instead of the executor.(e.g.locate or wall command)
+          Please Note:This bit is present for only files which have executable permissions
+
+      3.sticky bit: a bit set on files/directories that allows only the owner or root to delete those files.
+
+--> To assign special permissions at the user level
+
+    1.chmod u+s xyz.sh
+
+--> To assign special permissions at the group level
+ 
+    1.chmod g+s xyz.sh
+
+--> To remove special permissions at the user or group level
+
+    1.chmod u-s xyz.sh
+    2.chmod g-s xyz.sh
+
+--> To find all executables in Linux with setuid and setgid permissions
+    
+      1.find / -perm /6000 -type f 
+
+--> Sticky bit
+
+    1.It is assigned to the last bit of permissions
+
+         -rwx rwx rwt   ---> here t is assigned for security that user can't delete the directory       EX:- /tmp directory
+
+                SYNTAX:- chmod +t directoryname
+
+Plesase Note:- This bits work on C programming executables not on bash shell scripts..
+
+
+
+
+                                                 
+
+                                                         LAB EXERCISES
+---------------------------------------------------------------------------------------------------------------------------------------
+
+ 

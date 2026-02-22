@@ -1,0 +1,16 @@
+
+
+                              CHANGING HOSTNAME
+                             <------------------>
+
+we can change host name in two types
+
+1.using "hostnamectl set-hostname newhostname(CentOs7)" and than "reboot" or type "init 6"   NOTE:- to do this you have to root must..
+       -------------------------------------------------          -------          --------
+
+2.uisng "vi /etc/hostnmae" changing the host name by logging into that file and than "reboot" or use "init -6".
+        -----------------                                                           ----------------------------
+
+
+
+

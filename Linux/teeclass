@@ -1,0 +1,11 @@
+
+*)tee command is used to store  and view(both at the same time) the output of any command
+   E.g-:  echo "Hi Ameer1" | tee file1
+   E.g2-: echo "How are You!" | tee -a file1  Note:- "-a" is used to write nextline without overwriting prev content of file..
+
+*1)the command is named after the T-Splitter used in plumbing.it basically breaks the output of a program so that it can be both displayed
+ and saved in a file.it does both the rasks simultaneously.copies the result into the specified files or variables and also display the
+ result.
+
+......................................................................................  
+

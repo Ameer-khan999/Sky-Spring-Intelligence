@@ -1,0 +1,20 @@
+
+
+                                             Log Monitoring
+                                           <---------------->
+
+--> Another and most important way of system administration is log monitor it gives all logging information and 
+    other info..
+
+    Log directory = /var/log
+      1.boot
+      2.chronyd  = NTP
+      3.cron
+      4.maillog
+      5.secure                  = tail -f secure(this gives all recent activties)
+      6.messages
+      7.httpd
+
+               NOTE:-do more boot or else more secure
+
+ 

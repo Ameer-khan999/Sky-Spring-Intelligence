@@ -1,0 +1,27 @@
+
+                                         SWITCH AND SUDO USERS
+....................................................................................................................
+
+   --> COMMANDS
+      1. sudo - username
+
+          --> switching from one user account to another user account 
+
+      2. sudo
+
+           
+          --> sudoers allows a particular user to run commands like a root user without any requirement of password
+              and this users can access all permissoins  like a root account
+               
+                SYNTAX:- sudo fdisk -l NOTE:- users have to use sudocommand in order to see files like a root
+
+      3. visudo
+
+          --> this command gives you information about sudo
+
+   --> Giving access to particular user as sudo 
+
+         SYNTAX:- usermod -aG wheel akhan
+         SYNTAX:- grep wheel /etc/groups
+         
+..................................................................................................................... 

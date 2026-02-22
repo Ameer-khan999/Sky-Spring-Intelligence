@@ -1,0 +1,6 @@
+--> comparing of two files
+   1.diff 2.cmp 
+   -> this two commands are used to comapre  "file a" with "file b"
+     1.diff (line with line)
+     2.cmp  (byte by byte)
+...............................................................................................................

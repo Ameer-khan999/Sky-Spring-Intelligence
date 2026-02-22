@@ -1,0 +1,28 @@
+
+
+                       SYSTEM MONITORING COMMANDS
+                     <--------------------------->
+
+If we have to become a system administrator than you have to remember this commands definitely...
+
+1.top
+2.df
+3.dmesg
+4.iostat or iostat 1
+5.netstat
+6.free
+7.cat /proc/cpuinfo
+8.cat /proc/meminfo
+
+NOTE:- do man on this commnads for detailed expalanation
+
+      Syntax:- man top 
+              
+                OR
+              
+               man df 
+         
+          etc....................
+
+
+

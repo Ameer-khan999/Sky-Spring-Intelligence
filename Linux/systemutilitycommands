@@ -1,0 +1,14 @@
+
+                                    SYSTEM UTILITY COMMANDS
+                                  <------------------------->
+COMMANDS
+
+1.date          = gives date and time
+2.uptime        = gives some info
+3.uname         = gives flavorname
+4.hostname      = gives hostname
+5.which         = gives info about command where it is located
+6.cal           = gives calendar
+7.bc            = binary calculator
+
+........................................................................................................

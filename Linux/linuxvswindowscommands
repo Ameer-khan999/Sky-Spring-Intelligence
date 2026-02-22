@@ -1,0 +1,31 @@
+
+                              Windows VS Linux Commands
+                        -------------------------------------
+
+Command Description                            Windows                       Linux
+---------------------                      ---------------                -----------
+1.Listing of a directory                      dir                           ls -l
+
+2.Rename a file                               ren                            mv
+
+3.copy a file                                 copy                           cp
+
+4.Move a file                                 move                           mv
+
+5.Clear screen                                cls                            clear
+
+6.Delete file                                 del                            rm
+
+7.Compare contents of files                   fc                             diff
+
+8.Search for a word/string in a file          find                           grep
+
+9.Display command help                        command /?                  man command
+
+10.Displays your location in the file         chdir                          pwd
+
+11.Displays the time                          time                           date
+
+....................................................................................
+
+

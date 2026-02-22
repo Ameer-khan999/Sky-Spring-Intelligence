@@ -1,0 +1,38 @@
+
+
+                                                     TYPES OF ACCOUNTS
+.....................................................................................................................................
+
+1.Local account              --> we are using local accounts ex:-akhan,spiderman etc...
+
+2.Directory/Domain Accounts  --> To connect with 100's of servers and directories we need this type of 
+                                 Accounts..
+
+  For windows
+    *) windows  == Active directory
+
+What is LDAP ?
+
+Ans) LDAP is not a directory service it is a  protocol..
+
+......................................................................................................
+ 
+                              DIRECTORY SERVICES AND ITS DIFFERNECES
+                            <---------------------------------------->
+
+1.Active Directory       = Microsoft [by windows]
+
+2.IDM                    = Identity Manager [By redhat] NOTE:-Not a opensource
+                                                    <----------------------->
+3.WinBIND                = Used in Linux to communicate with windows(samba)
+
+4.OpenLDAP               = opensource [see in Module 7]
+
+5.IBM Directory Server   = Not a opensource
+
+6.JumpCloud
+
+7.LDAP                   = LightWeight Directory Access Protocol 
+
+
+.............................................................................................................

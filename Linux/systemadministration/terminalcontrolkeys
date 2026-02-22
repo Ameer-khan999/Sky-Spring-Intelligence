@@ -1,0 +1,48 @@
+      
+                            TERMINAL CONTROL KEYS
+                           <---------------------->
+
+--> Several key combinations on your keyboard usually have a special effect on the terminal..
+
+--> These control (CTRL) keys are accomplished by holding the CTRL key while typing the second key.
+
+    For Example,CTRL-c means to hold the CTRL key while you type the letter 'c'.
+
+The most common control keys are listed below:
+
+   1.ctrl-u    - Erase everything you've typed on the command line
+   2.ctrl-c    -  stop/kill a command
+   3.ctrl-z    - suspend a command
+   4.ctrl-d    - exit from an interactive program(signals end of data)
+
+
+
+-----------------------------------------------------------------------------------------------------------
+
+                                     TERMINAL COMMANDS
+                                   <------------------>
+
+1.clera       - clears the screen
+
+2.exit        - Exit out of the shell,terminal or a user session..
+
+3.script      - the script command stores the terminal activities in a log file that can be named by a user,
+                when a name is not provided by a user,the default file name,typescript is used..
+                In simple words it records everything that what we had done..
+
+                  Syntax:- script filename(log-file.log)
+                          --> than go to /etc directory
+                              1.type command "history" it records all our previous typed commands..
+                  
+                             NOTE:- please dont do cat on log-filr.log it takes you to automatic navigating...Dont Do this..
+
+
+
+
+
+
+
+
+
+  
+  

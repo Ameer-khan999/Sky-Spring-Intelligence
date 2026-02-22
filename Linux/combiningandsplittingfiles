@@ -1,0 +1,24 @@
+
+
+1) Multiple files can be combined into one and
+2) One file can be split into multiple files
+
+  --> cat file1 file2 file3 > file4
+  --> split file4
+
+2)  E.G:- split -1 300 file.txt file   NOTE:- that -l[ "minus el" ] not a -1[ "minus one" ]
+
+split file.txt into 300 lines per file and output to fileaa,fileab,fileac
+
+......................................................................................
+
+
+1) if we created a file in home directory later we have to copy the same content of a file to another file that is existed in sub
+directory than use this command
+
+  SYNTAX:- cat /home/akhan/filea >> /linux/fileb
+          *) this do not over write the data of destination file..
+
+........................................................................................................................................
+
+

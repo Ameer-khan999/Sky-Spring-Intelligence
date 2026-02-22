@@ -1,0 +1,22 @@
+                               
+                                     ADDITIONAL CHRONTAB COMMAND
+                                    <--------------------------->
+
+--> By default there are 4 different types of cronjobs
+
+    1.Hourly
+    2.daily
+    3.weekly
+    4.Monthly
+
+--> All the above crons are setup in
+   
+    *) /etc/cron.______(directory)
+
+--> The timing for each are set in
+
+   *) /etc/anacrontab_________(except hourly)
+
+--> For hourly
+
+   *) /etc/cron.d/0hourly

@@ -1,0 +1,8 @@
+
+                                   FINDING SYSTEM INFORMATION
+                                  <--------------------------->
+1.cat /etc/redhat-release
+2.uname -a
+3.dmidecode
+
+

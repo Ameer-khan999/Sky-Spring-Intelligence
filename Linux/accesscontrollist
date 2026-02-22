@@ -1,0 +1,31 @@
+
+
+*)What is ACL?
+
+   *)Access control list(Acl) provides an additioanl,more flexible permission mechanism for file systems.it is designed to assist with UNIX file permission.ACL allows you to give permission for any user or group to any disc resource.
+
+
+USE of ACL:
+
+  *)Think of scenario in which a particular user is not a member of group created by you still you want to give some read or write access,
+how can you do it without making user a member of group,here comes in picture Access Control Lists,ACL,helps us to do this trick..  
+
+
+List of commands for setting up ACL:
+  setfacl and getfacl
+
+1)To add permission for user
+    setfacl -m u:user:rwx /path/to/file
+
+2)To add permissions for a group
+  setfacl -m g:group:rw /path/to/file
+
+3)To allow all files or directories to inherit ACL,entries from the directory it is within
+  setfacl -Rm "entry" /pth/to/dir  Note:-Entry is nothing but u:user:rwx
+
+4)To remove all entries
+  setfacl -b path/to/file(for all users)
+
+Note:-
+  a.) as you assign the ACL permission to a file/directory it adds + sign at the end of the permission 
+  b) Setting w permission with ACL does not allow to remove a file

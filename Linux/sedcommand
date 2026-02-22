@@ -1,0 +1,36 @@
+                              
+                                                     sed command
+....................................................................................................................................
+
+1.Replace a string in a file with a new string
+    	syntax:- sed 's/Kenny/lenny/g' seinfeld-characters  NOTE:- this just displays output without effecting file,if we want to effect the file than use -i
+        EXample: sed -i 's/kenny/lenny/g' seinfeld-characters
+ 
+2.Find and delete a line
+        SYNTAX:- sed 's/costanza//g' seinfeld-characters      NOTE:- s-substitute , g-globail
+        
+        SYNTAX:- sed '/seinfeld/d' seinfeld-characters 
+
+3.Remove  empty lines
+        SYNTAX:- sed '^$/d' seinfeld-characters
+
+4.Remove the first lines or n lines in a file
+       SYNTAX:- sed '1d' seinfeld-characters     // removes first line
+       SYNTAX:- sed '1,2d' seinfeld-characters   // removes first two lines
+
+5.To replace tabs with spaces
+       SYNTAX:-  sed 's/\t/ /g' seinfeld-characters
+       SYNTAX:-  sed 's/ /\t/g' seinfeld-characters
+
+6.Show defined lines fromn a file
+       SYNTAX:- sed -n 12,18p seinfeld-characters  // it gives o/p from line 12 to 18
+       SYNTAX:- sed 12,18d seinfeld-characters     // it gives o/p of a file except 12 to 18
+       SYNTAX:- sed G seinfeld-characters  // this gives a gap b/w line to line
+       SYNTAX:- sed '8!s/seinfeld/sein/g' seinfeld-characters   //this replcaes the sentence "seinfeld" to 'sein" except 8th line that has a seinfeld sentence....
+
+7.Substitute within the vi editor
+
+       SYNTAX:- :%s/seinfeld/sein  //this is use in vi editor only
+
+..........................................................................................................................................
+

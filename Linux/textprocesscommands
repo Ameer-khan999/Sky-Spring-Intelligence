@@ -1,0 +1,106 @@
+
+1.cut
+2.awk
+3.grep and egrep
+4.sort
+5.uniq
+6.wc
+
+1.Cut
+    --> Cut is a command line utility that allows you to cut parts of lines from specified files or piped data and print the result to 
+standard output.it can be used to cut parts of a line by delimiter,byte position,and character
+
+          1) Cut filename               ==      Does not work
+
+          2) cut --version              ==      check version
+
+          3) cut -c1 filename           ==      list one character
+
+          4) cut -c1,2,4                ==      pick and choose character
+
+          5) cut -c1-3 filename         ==      list range of characters
+
+          6) cut -c1-3,6-8 filename     ==      list specific range of characters
+
+          7) cut -b1-3 filename         ==      list by byte size
+
+          8) cut -d:  or -d, or -d? -f 6 /etc/passwd   ==      list first 6th column separated by:  NOTE: delimiter only works on fileds not on characters
+
+          9) cut -d: -f 6-7 /etc/passwd ==      list first 6 and 7th column separated by:
+
+          10) ls -l | cut -c2-4         ==      only print user permisssions of filess or directory
+
+........................................................................................................................................................................
+
+2.awk
+    
+   --> awk is a utility/language designed for data extraction.Most of the time it is used to extract fields from a file or from an output.
+           
+            1) awk --version                                           == check the version
+            2)awk '{print $1}' filename                                == list first field from a file
+            3) ls -l | awk '{print $1,$2}'                             == list first and second fields of ls -l output
+            4) ls -l | awk '{print $NF}'                               == last field of the output
+            5) awk '/jerry/' {print}' filename                         == search for a specific word
+            6) awk -F: '{print $1}' /etc/passwd                        == outputs only 1st filed of /etc/passwd file
+            7) echo "ameer ameer" | awk '{$2=="khan"; print $0}'       == replace words field with new words
+            8) cat file | awk '{$3="pathan"; print $0}'                == it adds 3rd filed 
+            9) awk 'length($0) > 15' filename                          == get lines that have more than 15 byte size
+            10) ls -l | awk '{if($NF == "seinfeld") print $0;}'        == get the field matching seinfeld in /home/akhan
+            11) ls -l | awk '{print NF}'                               == gives the exact Number of fields
+....................................................................................................................................
+
+3.grep/egrep
+
+  --> WHAT IS GREP ?
+       -> The grep command stands for "global regular expression print."process text line by line and prints any lines which match a
+  specified pattern,Basically it is specific keyword to search.
+
+   1) grep --version OR grep --help             ==  Check version or help
+   2) grep keyword(EX-:seinfeld) file           ==  search for a keyword from a file
+   3) grep -c keyword file                      ==  search for a keyword and count 
+   4) grep -i keyword file                      ==  search for a keyword ignore case-sensitive
+   5) grep -n keyword file                      ==  Displays the matched lines amd their line numbers
+   6) grep -v keyword filename                  ==  Displays everything except keyword
+   7) grep keyword filename | awk '{print} $1'  ==  search for a keyword and then only gives 1st field
+   8) ls -l | grep Desktop                      ==  search for a keyword and then only give the 1st filed
+   
+
+  --> egrep
+
+     1) egrep -i "keyword|keyword" filename     ==  search for 2 keywords.
+................................................................................................................................
+
+4.sort/uniq
+
+  --> What are sort and uniq commands ?
+       -> sort command sorts in alphabetical order
+       -> uniq command filters out the repeated or duplicates lines
+
+    1) sort --version OR sort --help              ==  check version or help
+    2) sort filename                              ==  sorts files in alphabetical order
+    3) sort -r filename                           ==  sort in reverse alphabetical order
+    4) sort -k2 filename                          ==  sort by field number
+    
+    5) uniq file                                  == removes duplicates
+    6) sort file | uniq                           == always sort first before using uniq
+    7) sort file | uniq -c                        == sorts first and then uniq later gives list count
+    8) sort file | uniq -d                        == only shows repeated lines
+
+..............................................................................................................................
+
+
+5.wc[word count]
+     
+      --> What is wc command ?
+         -> The command reads either standard input or a list of files and generates newline count,word count,and byte count.
+
+         1) wc --version OR wc --help           == check version or help
+         2) wc filename                         == check file line count,word count and byte count
+         3) wc -l filename                      == get the number of lines in a file
+         4) wc -w filename                      == get the number of words in a file
+         5) wc -c filename                      == get the number of bytes in a file
+         6) ls -l | wc -l                       == gives the number of files that are exitsed
+         7) ls -l | grep drw | wc -l            == gives the number of directories that are existed
+......................................................................................................................................
+
+

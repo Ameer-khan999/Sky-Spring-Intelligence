@@ -1,0 +1,29 @@
+          
+
+
+                                       SYSTEM MONITORING COMMANDS
+....................................................................................................................
+
+
+    --> this commands are used to monitor the system activities
+  1.who
+    --> Shows the recent activities that are going on
+
+  2.last
+    --> Displays the last activity
+        Syntax:- last | awk '[print $1}' | sort | uniq
+
+  3.w
+    --> it just shows data
+
+  4.finger
+   --> it is not distributed by linux,we have to install it by entering "yum install finger-y" NOTE:to do this we have to enable internet
+       connection to our linux machine
+ 
+  5.id
+   
+   --> id is used to know the userid or groupid
+     SYNTAX:- id username
+
+....................................................................................................................................
+

@@ -1,0 +1,21 @@
+
+
+*)there are 2 owners of a file or directory
+1.User
+2.group
+
+
+*)command to change file ownership
+  1.chown and chgrp
+    a)chown changes the ownesrship of a file
+    b)chgrp changes the group ownership of a file
+
+*)Recursive ownership change option(Cascade)
+  a)-R
+
+Syntax:-  chown root filename(ex "lisa")
+
+Note:- Regular user(akhan myslef) cannot change the filwownership so we have to become a root
+.........
+
+

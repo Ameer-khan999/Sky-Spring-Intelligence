@@ -1,0 +1,31 @@
+
+                                                    USER ACCOUNT MANAGEMENT
+.......................................................................................................................................
+
+  Commands:-
+
+1.useradd
+    SYNTAX:-  useradd spiderman      // adding user
+
+2.groupadd
+    SYNTAX:-  groupadd superheros    // adding group     NOTE:- we can see user by typing " id spiderman " and group by " cat /etc/group " 
+                                                                                 - - -------------             ------------------
+3.userdel
+    SYNTAX:-  userdel -r spiderman   // deleting user
+
+4.groupdel
+    SYNTAX:-  groupdel superheros    // deleting group
+
+5.usermod
+    SYNTAX:-  usermod -G superheros spiderman   // spiderman is also belongs to group called superheros even spiderman is a itslef a group..
+
+
+  Files:-
+
+1./etc/passwd
+2./etc/group
+3./etc/shadow
+
+Example:
+
+  useradd -g superheros -s /bin/bash/ -c 'usewr description" -m -d /home/spiderman

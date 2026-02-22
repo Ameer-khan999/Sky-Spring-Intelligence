@@ -1,0 +1,9 @@
+
+
+                                SYSTEM MAINTENANCE COMMNADS
+                               <---------------------------->
+
+1.shutdown                       = to bring down linux system
+2.init 0-6                       = 0 for shutdown,3 for multi user,6 for reboot and other many commands
+3.reboot                         = to reboot linux system
+4.halt                           = shutsdown right away immediately

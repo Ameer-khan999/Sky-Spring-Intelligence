@@ -1,0 +1,15 @@
+
+
+                                 SYSTEM ARCHITECTURE
+                               <--------------------->
+
+1.Differences between a 32-bit and 64-bit CPU
+
+    --> A big difference between 32-bit processor and 64-bit processors is the number of calculations per second they can perform,which affects the speed at which they can complete tasks.64-bit processors can come in dual core,quad core,six core and 
+eight core versions for home computing Multiple cores allow for increased number of calculations per second that can be performed,which can increase the processing power and help make a computer run faster.software programs that require many calculations to function smoothly can operate faster an dmore efficiently on the multi-core 64-bit processors.
+
+  Syntax:- arch or uname -a
+
+
+
+

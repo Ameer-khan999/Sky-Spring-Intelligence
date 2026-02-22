@@ -1,0 +1,37 @@
+
+*) there are 3 redirects in Linux
+  1.standard input(stdin) and it has a file descriptor number as 0
+  2.standard output(stdout) and it has file descriptor number as 1
+  3.standard error(stderr) and it has file descriptor number as 2
+
+*a)Output(stdout) -1
+
+  1.By default when running a command its output goes to the terminal
+  2.The output of a command can be routed to a file using > symbol
+    E-g.:- ls -l > listings(filename)
+         pwd > findpath
+  3.if using the same file for additional output or tp append to the same file then use >>
+    E-g.:- ls -la >> listings
+           echo "Hello World" >> findpath
+............................................................................................................................................
+
+*b)Input(stdin) -0
+  1.Input is used when feeding file contents to a file
+    .E.g- cat < listings
+          mail -s "office memo" allusers@abc.com < memoletter
+
+
+..........................................................................................................................................
+
+*c)Error(stderr)-2
+
+  1.when a command is executed we use a keyboard and that is also considered as(stdin-0)
+  2.that command output goes on the monitor and that output is considered as(stdout-1)
+  3.if the command produced any error on the screen then it is considered as(stderr-2)
+     E-g:-   ls -l /root 2 > errorfile
+             telnet localhost 2 > errorfile
+
+....................................................................................................................................
+
+
+

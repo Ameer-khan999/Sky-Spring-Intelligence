@@ -1,0 +1,23 @@
+            
+                                                       Talking To Users
+ ...................................................................................................................................
+
+Commands
+  1.users        --> This command is used to see how many users are using linux currently
+
+  2.wall         --> This command is usedd to send messages to all current users of linux..
+                          SYNTAX:- wall
+                                    
+                                   Hi all,Happy New year
+
+                                      -- Ameer Khan
+
+  3.write        --> This command is used to write a message to a specific user
+           
+                         SYNTAX:- write username
+
+                                   Hi user,can you please logout we are going to off the sytsem for maintanance purpose.
+
+...........................................................................................................................................
+
+
